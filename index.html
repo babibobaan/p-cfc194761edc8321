@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Sénse TOKYO — Isadora, seen</title>
+<title>Sénse TOKYO — Seen, as you are</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 :root{
   --st-ivory:#f5f1ea; --st-paper:#fbf9f5; --st-stone:#ebe4d8; --st-line:#dcd2c3;
   --st-ink:#151311; --st-ink2:#4a443d; --st-muted:#8c8275; --st-sepia:#7a6650;
-  --st-night:#1b1714; --st-olive:#5e6a4f; --st-sand:#c9b79c; --st-gold:#b8935a;
+  --st-night:#1b1714; --st-olive:#5e6a4f; --st-sand:#c9b79c; --st-rose:#a86f5c;
   --st-serif:"Didot","Bodoni 72","Bodoni Moda","Playfair Display",Georgia,serif;
   --st-sans:"Inter","Helvetica Neue","Hiragino Sans",Arial,sans-serif;
   --pad:clamp(22px,6vw,96px);
@@ -23,10 +23,10 @@ body{background:var(--st-ivory);color:var(--st-ink);font-family:var(--st-sans);f
 img{display:block;max-width:100%}
 a{color:inherit}
 
-.topbar{position:absolute;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:18px var(--pad);color:var(--st-ivory);mix-blend-mode:difference;pointer-events:none}
+.topbar{position:absolute;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:18px var(--pad);color:var(--st-ivory)}
 .mark{font-family:var(--st-serif);font-size:22px;line-height:.9}
 .mark small{display:block;font-size:10px;letter-spacing:.34em;margin-top:4px;font-family:var(--st-sans);font-weight:500}
-.topbar .eyebrow{color:inherit}
+.topbar .eyebrow{color:#d9ccb8}
 .progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--st-sand);z-index:21}
 
 .eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--st-muted);font-weight:500}
@@ -38,227 +38,198 @@ h1,h2,h3{font-family:var(--st-serif);font-weight:400;letter-spacing:-.015em}
 h1{font-size:clamp(44px,7vw,104px);line-height:.98}
 h1 em,h2 em{font-style:italic;color:var(--st-sepia)}
 .night h1 em,.night h2 em{color:#d9ccb8}
-h2.sec{font-size:clamp(34px,4.4vw,60px);line-height:1.04;max-width:18ch}
+h2.sec{font-size:clamp(34px,4.4vw,60px);line-height:1.04;max-width:18ch;margin-top:14px}
 .lede{font-weight:300;font-size:clamp(17px,1.5vw,20px);line-height:1.6;color:var(--st-ink2);max-width:38rem;margin-top:22px}
 .night .lede{color:#cfc5b6}
 .note{font-size:13px;line-height:1.5;color:var(--st-muted);font-weight:300;max-width:48rem}
-.night .note{color:#8c8275}
 
-section{padding:clamp(80px,12vw,160px) var(--pad);position:relative}
+section{padding:clamp(80px,12vw,150px) var(--pad);position:relative}
 .night{background:var(--st-night);color:var(--st-ivory)}
 .stone{background:var(--st-stone)}
-.head{display:grid;grid-template-columns:160px 1fr;gap:32px;margin-bottom:clamp(40px,6vw,80px)}
+.head{display:grid;grid-template-columns:160px 1fr;gap:32px;margin-bottom:clamp(40px,6vw,76px)}
 .head .num{font-family:var(--st-serif);font-size:15px;color:var(--st-muted);padding-top:12px;border-top:1px solid currentColor}
 .night .head .num{color:#8c8275}
 
 /* hero */
 .hero{min-height:100svh;padding:0;display:flex;align-items:flex-end;color:var(--st-ivory);background:var(--st-night) url("img/hero-tokyo-night.jpg") center right/cover no-repeat}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,23,20,.92) 0%,rgba(27,23,20,.62) 42%,rgba(27,23,20,.05) 75%),linear-gradient(0deg,rgba(27,23,20,.85) 0%,rgba(27,23,20,0) 40%)}
-.hero .inner{position:relative;padding:0 var(--pad) clamp(56px,9vw,120px);max-width:900px}
-.hero h1{max-width:11ch}
-.hero h1 em{color:#d9ccb8}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,23,20,.92) 0%,rgba(27,23,20,.6) 44%,rgba(27,23,20,.05) 76%),linear-gradient(0deg,rgba(27,23,20,.85) 0%,rgba(27,23,20,0) 40%)}
+.hero .inner{position:relative;padding:0 var(--pad) clamp(56px,9vw,120px);max-width:920px}
+.hero h1{max-width:11ch;margin-top:18px}
 .hero .lede{color:#e3d9ca}
 .hero .meta{margin-top:44px;display:flex;gap:36px;flex-wrap:wrap;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#a89c8b}
 
-/* study */
-.study{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px)}
-.person{border-top:1px solid var(--st-ink);padding-top:28px}
-.person .handle{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--st-sepia)}
-.person h3{font-size:clamp(30px,3.2vw,44px);line-height:1.05;margin:10px 0 6px}
-.person .tag{font-family:var(--st-serif);font-style:italic;font-size:20px;color:var(--st-ink2)}
-.facts{list-style:none;margin:24px 0 0;border-top:1px solid var(--st-line)}
-.facts li{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--st-line);font-size:15px;font-weight:300;color:var(--st-ink2)}
-.facts li b{font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--st-muted);padding-top:3px}
-.lesson{margin-top:26px;font-family:var(--st-serif);font-size:24px;line-height:1.25}
+/* heard */
+.heard{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--st-ink)}
+.heard article{padding:28px 28px 30px 0;border-bottom:1px solid var(--st-line)}
+.heard article:not(:nth-child(3n+1)){padding-left:28px;border-left:1px solid var(--st-line)}
+.heard .q{font-family:var(--st-serif);font-size:clamp(22px,2vw,28px);line-height:1.2}
+.heard .q em{color:var(--st-sepia)}
+.heard p{margin-top:12px;font-size:15px;font-weight:300;color:var(--st-ink2)}
 
-/* shared */
-.rows{border-top:1px solid var(--st-ink)}
-.row{display:grid;grid-template-columns:80px minmax(0,1fr) minmax(0,1.3fr);gap:28px;padding:26px 0;border-bottom:1px solid var(--st-line);align-items:baseline}
-.row .n{font-family:var(--st-serif);font-size:22px;color:var(--st-muted)}
-.row h3{font-size:clamp(24px,2.4vw,32px);line-height:1.1}
-.row p{font-weight:300;color:var(--st-ink2);font-size:16px}
+/* shift table */
+.shift{border-top:1px solid var(--st-ink)}
+.shift .r{display:grid;grid-template-columns:minmax(0,1fr) 40px minmax(0,1.3fr);gap:20px;padding:20px 0;border-bottom:1px solid var(--st-line);align-items:baseline}
+.shift .was{font-size:15px;font-weight:300;color:var(--st-muted);text-decoration:line-through;text-decoration-color:rgba(140,130,117,.5)}
+.shift .arrow{font-family:var(--st-serif);color:var(--st-sepia);font-size:20px}
+.shift .now{font-family:var(--st-serif);font-size:clamp(20px,1.9vw,26px);line-height:1.2}
+.shift .hd{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--st-muted);text-decoration:none;font-family:var(--st-sans)}
 
-/* assets */
+/* engine */
+.engine{display:grid;grid-template-columns:1fr 1.6fr;gap:clamp(28px,5vw,72px);align-items:start}
+.core{border:1px solid #5c524a;padding:36px 32px}
+.core .kicker{color:#d9ccb8}
+.core h3{font-size:clamp(34px,3.4vw,48px);line-height:1.05;margin:14px 0 14px}
+.core p{font-size:15px;font-weight:300;color:#cfc5b6}
+.outs{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--st-ivory)}
+.out{padding:26px 22px 10px 0}
+.out+.out{padding-left:22px;border-left:1px solid #3a332c}
+.out .role{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#d9ccb8}
+.out h3{font-size:32px;margin:10px 0 12px}
+.out p{font-size:15px;font-weight:300;color:#cfc5b6}
+.out .how{margin-top:16px;padding-top:12px;border-top:1px solid #3a332c;font-size:13px;color:#a89c8b}
+
+/* split */
 .split{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(32px,5vw,80px);align-items:center}
 .split.rev{grid-template-columns:1fr 1.05fr}
-.frame{position:relative}
 .frame img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
 .frame.tall img{aspect-ratio:3/4}
+.frame.wide img{aspect-ratio:16/9}
 .frame figcaption{margin-top:10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--st-muted)}
 .night .frame figcaption{color:#8c8275}
-.assets{list-style:none;border-top:1px solid var(--st-ink)}
-.assets li{padding:16px 0;border-bottom:1px solid var(--st-line);display:grid;grid-template-columns:120px 1fr;gap:18px}
-.assets .k{font-family:var(--st-serif);font-size:26px;line-height:1}
-.assets .v{font-weight:300;color:var(--st-ink2);font-size:15px}
-.assets .v b{display:block;font-weight:500;color:var(--st-ink);font-size:15px;margin-bottom:2px}
-.pull{margin-top:40px;font-family:var(--st-serif);font-size:clamp(26px,2.6vw,36px);line-height:1.2;max-width:22ch}
-.pull em{color:var(--st-sepia)}
-
-/* position */
-.position{text-align:left}
-.position h1{max-width:13ch;margin-top:18px}
-.words{display:flex;gap:14px;flex-wrap:wrap;margin-top:48px}
-.words span{border:1px solid #5c524a;padding:12px 22px;font-family:var(--st-serif);font-size:22px;font-style:italic;color:#e3d9ca}
-.test{margin-top:52px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;border-top:1px solid #3a332c;padding-top:28px}
-.test div{font-size:15px;font-weight:300;color:#cfc5b6}
-.test b{display:block;font-family:var(--st-serif);font-weight:400;font-size:22px;color:var(--st-ivory);margin-bottom:6px}
-
-/* pillars */
-.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,28px)}
-.pillar img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:saturate(.92)}
-.pillar .pct{margin-top:18px;display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--st-ink);padding-top:12px}
-.pillar .pct span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--st-muted)}
-.pillar .pct b{font-family:var(--st-serif);font-weight:400;font-size:26px}
-.pillar h3{font-size:30px;line-height:1.05;margin:12px 0 10px}
-.pillar p{font-size:15px;font-weight:300;color:var(--st-ink2)}
-.pillar .ex{margin-top:14px;font-size:13px;color:var(--st-sepia);line-height:1.5}
-
-/* platforms */
-.platforms{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--st-ivory)}
-.platform{padding:28px 26px 30px 0}
-.platform+.platform{padding-left:26px;border-left:1px solid #3a332c}
-.platform .role{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#d9ccb8}
-.platform h3{font-size:34px;margin:10px 0 14px}
-.platform p{font-size:15px;font-weight:300;color:#cfc5b6}
-.platform .cad{margin-top:18px;padding-top:14px;border-top:1px solid #3a332c;font-family:var(--st-serif);font-size:20px;color:var(--st-ivory)}
-.later-line{margin-top:40px;display:flex;gap:28px;flex-wrap:wrap;font-size:14px;color:#a89c8b;font-weight:300}
-.later-line b{color:var(--st-ivory);font-weight:500}
-
-/* audiences */
-.aud{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,40px)}
-.aud article{background:var(--st-paper);border:1px solid var(--st-line);padding:32px 28px}
-.aud .flag{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--st-sepia)}
-.aud h3{font-size:32px;margin:12px 0 12px}
-.aud p{font-size:15px;font-weight:300;color:var(--st-ink2)}
-.aud .lang{margin-top:22px;padding-top:14px;border-top:1px solid var(--st-line);font-size:13px;color:var(--st-ink)}
-
-/* week */
-.week{display:grid;grid-template-columns:repeat(7,1fr);border-top:1px solid var(--st-ink)}
-.day{padding:22px 16px 24px 0;min-height:200px}
-.day+.day{padding-left:16px;border-left:1px solid var(--st-line)}
-.day .d{font-family:var(--st-serif);font-size:28px}
-.day .t{margin-top:4px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--st-sepia)}
-.day p{margin-top:14px;font-size:14px;font-weight:300;color:var(--st-ink2)}
-.day.off{color:var(--st-muted)}
-.day.off .t{color:var(--st-muted)}
-.weeksum{margin-top:30px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
-.weeksum .big{font-family:var(--st-serif);font-size:clamp(40px,4vw,56px);line-height:1}
-.weeksum .big small{font-family:var(--st-sans);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--st-muted);margin-left:10px}
-
-/* rules */
 .rules{list-style:none;border-top:1px solid var(--st-ink)}
-.rules li{padding:18px 0;border-bottom:1px solid var(--st-line);display:grid;grid-template-columns:120px 1fr;gap:20px}
+.night .rules{border-color:var(--st-ivory)}
+.rules li{padding:16px 0;border-bottom:1px solid var(--st-line);display:grid;grid-template-columns:120px 1fr;gap:20px}
+.night .rules li{border-color:#3a332c}
 .rules b{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--st-muted);font-weight:500;padding-top:4px}
+.night .rules b{color:#a89c8b}
 .rules span{font-size:16px;font-weight:300;color:var(--st-ink2)}
+.night .rules span{color:#cfc5b6}
 .rules span em{font-family:var(--st-serif);font-size:19px;color:var(--st-ink)}
-.swatches{display:flex;gap:10px;margin-top:10px}
-.swatches i{width:36px;height:36px;border:1px solid var(--st-line);display:block}
+.night .rules span em{color:var(--st-ivory)}
+.pull{margin-top:36px;font-family:var(--st-serif);font-size:clamp(24px,2.4vw,34px);line-height:1.22;max-width:24ch}
+.pull em{color:var(--st-sepia)}
+.pull small{display:block;margin-top:12px;font-family:var(--st-sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--st-muted)}
 
-/* levers */
-.levers{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(22px,3vw,40px)}
-.lever{border-top:1px solid var(--st-ink);padding-top:20px}
-.lever .n{font-family:var(--st-serif);color:var(--st-muted);font-size:15px}
-.lever h3{font-size:28px;line-height:1.1;margin:10px 0 10px}
-.lever p{font-size:15px;font-weight:300;color:var(--st-ink2)}
+/* energy */
+.energy{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.lvl{padding:32px 28px 28px;border:1px solid var(--st-line);background:var(--st-paper);display:flex;flex-direction:column}
+.lvl .dot{width:12px;height:12px;border-radius:50%;margin-bottom:18px}
+.lvl .when{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--st-sepia)}
+.lvl h3{font-size:32px;margin:10px 0 12px;line-height:1.05}
+.lvl p{font-size:15px;font-weight:300;color:var(--st-ink2)}
+.lvl .out2{margin-top:auto;padding-top:18px;border-top:1px solid var(--st-line);font-family:var(--st-serif);font-size:19px}
+.bank{margin-top:36px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+.bank .big{font-family:var(--st-serif);font-size:clamp(48px,5vw,72px);line-height:1}
+.bank p{font-size:16px;font-weight:300;color:var(--st-ink2);max-width:44rem}
 
-/* ladder */
-.ladder{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--st-ivory)}
-.rung{display:grid;grid-template-columns:90px minmax(0,1fr) minmax(0,1.4fr) 160px;gap:28px;padding:26px 0;border-bottom:1px solid #3a332c;align-items:baseline}
-.rung .n{font-family:var(--st-serif);font-size:44px;line-height:.8;color:#8c8275}
-.rung h3{font-size:30px}
-.rung p{font-size:15px;font-weight:300;color:#cfc5b6}
-.rung .who{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#d9ccb8;text-align:right}
-.rung.hi .n{color:var(--st-sand)}
+/* team */
+.team{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid var(--st-ink)}
+.member{padding:26px 20px 24px 0}
+.member+.member{padding-left:20px;border-left:1px solid var(--st-line)}
+.member .role{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--st-sepia)}
+.member h3{font-size:28px;margin:10px 0 12px;line-height:1.05}
+.member p{font-size:14px;font-weight:300;color:var(--st-ink2)}
+.member .cost{margin-top:16px;padding-top:12px;border-top:1px solid var(--st-line);font-family:var(--st-serif);font-size:18px}
+.member.you{background:var(--st-night);color:var(--st-ivory);padding-left:20px}
+.member.you .role{color:#d9ccb8}
+.member.you p{color:#cfc5b6}
+.member.you .cost{border-color:#3a332c}
 
-/* budget */
-.budget{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.tier{background:var(--st-paper);border:1px solid var(--st-line);padding:34px 28px 28px;display:flex;flex-direction:column}
-.tier.rec{background:var(--st-night);color:var(--st-ivory);border-color:var(--st-night)}
-.tier .when{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--st-sepia)}
-.tier.rec .when{color:#d9ccb8}
-.tier .yen{font-family:var(--st-serif);font-size:clamp(40px,4vw,56px);line-height:1;margin:16px 0 6px}
-.tier .yen small{font-size:18px}
-.tier h3{font-size:24px;margin-bottom:16px}
-.tier ul{list-style:none;border-top:1px solid var(--st-line);margin-top:auto}
-.tier.rec ul{border-color:#3a332c}
-.tier li{padding:10px 0;border-bottom:1px solid var(--st-line);font-size:14px;font-weight:300;color:var(--st-ink2)}
-.tier.rec li{border-color:#3a332c;color:#cfc5b6}
+/* content day */
+.looks{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.look{border-top:1px solid var(--st-ink);padding-top:18px}
+.look .n{font-family:var(--st-serif);font-size:15px;color:var(--st-muted)}
+.look h3{font-size:28px;margin:8px 0 10px}
+.look p{font-size:15px;font-weight:300;color:var(--st-ink2)}
+.shots{margin-top:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.shots div{border:1px solid var(--st-line);background:var(--st-paper);padding:22px}
+.shots b{display:block;font-family:var(--st-serif);font-weight:400;font-size:40px;line-height:1}
+.shots span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--st-muted)}
 
-/* 90 days */
-.phases{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--st-ink)}
-.phase{padding:26px 24px 10px 0}
-.phase+.phase{padding-left:24px;border-left:1px solid var(--st-line)}
-.phase .when{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--st-sepia)}
-.phase h3{font-size:28px;line-height:1.1;margin:10px 0 14px}
-.phase ul{list-style:none}
-.phase li{font-size:14px;font-weight:300;color:var(--st-ink2);padding:8px 0;border-top:1px solid var(--st-line)}
-.target{margin-top:48px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.target div{border:1px solid var(--st-line);background:var(--st-paper);padding:22px}
-.target b{display:block;font-family:var(--st-serif);font-weight:400;font-size:44px;line-height:1}
-.target span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--st-muted)}
+/* rooms */
+.rooms{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.4vw,32px)}
+.room{border-top:1px solid var(--st-ink);padding-top:18px}
+.room .n{font-family:var(--st-serif);color:var(--st-muted);font-size:15px}
+.room h3{font-size:26px;line-height:1.1;margin:10px 0 10px}
+.room p{font-size:15px;font-weight:300;color:var(--st-ink2)}
+.honest{margin-top:40px;padding:22px 26px;border-left:2px solid var(--st-sand);background:var(--st-paper);font-size:15px;font-weight:300;color:var(--st-ink2);max-width:52rem}
 
-/* bio */
-.bio{max-width:420px;background:var(--st-paper);border:1px solid var(--st-line);padding:28px;font-size:15px;line-height:1.6}
-.bio .h{display:flex;gap:16px;align-items:center;margin-bottom:16px}
-.bio .av{width:64px;height:64px;border-radius:50%;background:url("img/street-style.jpg") center 18%/cover;flex:none}
-.bio .h b{font-weight:600}
-.bio .h span{display:block;font-size:13px;color:var(--st-muted)}
-.bio .link{color:var(--st-sepia)}
+/* three tracks */
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px)}
+.track h3{font-size:clamp(30px,3vw,42px);line-height:1.05;margin:12px 0 16px}
+.track .lede{margin-top:0;font-size:17px}
+.track ul{list-style:none;margin-top:22px;border-top:1px solid var(--st-ink)}
+.track li{padding:13px 0;border-bottom:1px solid var(--st-line);font-size:15px;font-weight:300;color:var(--st-ink2)}
+.track li b{font-weight:500;color:var(--st-ink)}
+.btn{display:inline-block;margin-top:24px;border:1px solid currentColor;padding:12px 20px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none}
+.btn:hover{background:var(--st-ink);color:var(--st-ivory)}
 
-/* measure / avoid */
-.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px)}
-.list{list-style:none;border-top:1px solid var(--st-ink)}
-.list li{padding:16px 0;border-bottom:1px solid var(--st-line);font-size:16px;font-weight:300;color:var(--st-ink2)}
-.list li b{font-weight:500;color:var(--st-ink)}
-.two h3{font-size:32px;margin-bottom:18px}
+/* voice ladder */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;align-items:end}
+.step{border-left:1px solid #3a332c;padding:0 18px 0 18px}
+.step:first-child{border-left:0;padding-left:0}
+.step .bar{background:#3a332c;margin-bottom:18px}
+.step .bar i{display:block;background:var(--st-sand)}
+.step .n{font-family:var(--st-serif);font-size:15px;color:#8c8275}
+.step h3{font-size:24px;line-height:1.1;margin:8px 0 8px}
+.step p{font-size:14px;font-weight:300;color:#cfc5b6}
+.guard{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;border-top:1px solid #3a332c;padding-top:26px}
+.guard div{font-size:15px;font-weight:300;color:#cfc5b6}
+.guard b{display:block;font-family:var(--st-serif);font-weight:400;font-size:22px;color:var(--st-ivory);margin-bottom:6px}
+
+/* october */
+.cal{border-top:1px solid var(--st-ink)}
+.wk{display:grid;grid-template-columns:150px minmax(0,1fr) minmax(0,1fr);gap:28px;padding:24px 0;border-bottom:1px solid var(--st-line);align-items:baseline}
+.wk .d{font-family:var(--st-serif);font-size:22px}
+.wk .d small{display:block;font-family:var(--st-sans);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--st-sepia);margin-top:4px}
+.wk h3{font-size:24px;line-height:1.15}
+.wk p{font-size:15px;font-weight:300;color:var(--st-ink2)}
+.wk .opt{display:inline-block;margin-left:8px;font-family:var(--st-sans);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--st-sepia);border:1px solid var(--st-line);padding:3px 8px;vertical-align:middle}
+
+/* measure */
+.measure{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.measure div{border:1px solid var(--st-line);background:var(--st-paper);padding:24px 20px}
+.measure b{display:block;font-family:var(--st-serif);font-weight:400;font-size:24px;line-height:1.15;margin-bottom:8px}
+.measure span{font-size:14px;font-weight:300;color:var(--st-ink2)}
 
 /* close */
-.close{min-height:90svh;display:flex;flex-direction:column;justify-content:center;background:var(--st-night) url("img/beauty-ritual.jpg") center/cover no-repeat;color:var(--st-ivory)}
-.close::before{content:"";position:absolute;inset:0;background:rgba(27,23,20,.78)}
+.close{min-height:90svh;display:flex;flex-direction:column;justify-content:center;background:var(--st-night) url("img/hosted-brunch.jpg") center/cover no-repeat;color:var(--st-ivory)}
+.close::before{content:"";position:absolute;inset:0;background:rgba(27,23,20,.8)}
 .close > *{position:relative}
 .close h1{max-width:12ch}
 .sources{margin-top:80px;padding-top:24px;border-top:1px solid #3a332c;font-size:12px;line-height:1.7;color:#8c8275;max-width:60rem}
 .sources a{color:#a89c8b}
 
-.btn{display:inline-block;margin-top:28px;border:1px solid currentColor;padding:12px 20px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none}
-.btn:hover{background:var(--st-ivory);color:var(--st-ink)}
-
 .js .reveal{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
 .js .reveal.in{opacity:1;transform:none}
 
-@media (max-width:1000px){
-  .pillars,.platforms{grid-template-columns:1fr 1fr}
-  .platform:nth-child(3){padding-left:0;border-left:0}
-  .platform:nth-child(n+3){border-top:1px solid #3a332c}
-  .week{grid-template-columns:repeat(4,1fr)}
-  .day:nth-child(5){padding-left:0;border-left:0}
-  .day:nth-child(n+5){border-top:1px solid var(--st-line)}
-  .phases,.target{grid-template-columns:1fr 1fr}
-  .phase:nth-child(3){padding-left:0;border-left:0}
-  .rung{grid-template-columns:70px 1fr}
-  .rung p,.rung .who{grid-column:2}
-  .rung .who{text-align:left}
+@media (max-width:1100px){
+  .team{grid-template-columns:1fr 1fr}
+  .member,.member+.member{padding-left:0;border-left:0;border-bottom:1px solid var(--st-line);padding-right:18px}
+  .member.you{padding-left:20px}
+  .rooms,.measure{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr;gap:26px}
+  .step,.step:first-child{border-left:0;padding:0}
+  .engine{grid-template-columns:1fr}
 }
-@media (max-width:720px){
+@media (max-width:760px){
   .head{grid-template-columns:1fr;gap:14px}
   .head .num{max-width:80px}
-  .study,.split,.split.rev,.aud,.levers,.budget,.two,.test{grid-template-columns:1fr}
+  .heard,.outs,.energy,.tracks,.split,.split.rev,.looks,.guard,.team,.rooms,.measure{grid-template-columns:1fr}
+  .heard article,.heard article:not(:nth-child(3n+1)){padding-left:0;border-left:0}
+  .out,.out+.out{padding-left:0;border-left:0;border-top:1px solid #3a332c}
   .split.rev .frame{order:-1}
-  .row{grid-template-columns:48px 1fr;gap:14px}
-  .row p{grid-column:2}
-  .pillars{grid-template-columns:1fr}
-  .platforms{grid-template-columns:1fr}
-  .platform,.platform+.platform{padding-left:0;border-left:0;border-top:1px solid #3a332c}
-  .week{grid-template-columns:1fr 1fr}
-  .day,.day+.day{padding-left:0;border-left:0;border-top:1px solid var(--st-line);min-height:0;padding-right:12px}
-  .phases{grid-template-columns:1fr}
-  .phase,.phase+.phase{padding-left:0;border-left:0}
-  .assets li,.rules li,.facts li{grid-template-columns:1fr;gap:4px}
+  .shift .r{grid-template-columns:1fr;gap:4px}
+  .shift .arrow{display:none}
+  .shots{grid-template-columns:1fr 1fr}
+  .rules li{grid-template-columns:1fr;gap:4px}
+  .wk{grid-template-columns:1fr;gap:8px}
+  .bank{grid-template-columns:1fr;gap:10px}
   .hero{background-position:70% center}
   .hero::before{background:linear-gradient(0deg,rgba(27,23,20,.95) 0%,rgba(27,23,20,.55) 60%,rgba(27,23,20,.2) 100%)}
 }
 @media print{
-  .topbar,.progress{display:none}
+  .progress{display:none}
   .js .reveal{opacity:1;transform:none}
   section{page-break-inside:avoid}
 }
@@ -268,454 +239,359 @@ section{padding:clamp(80px,12vw,160px) var(--pad);position:relative}
 <div class="progress" id="progress"></div>
 <header class="topbar">
   <div class="mark">Sénse<small>TOKYO</small></div>
-  <div class="eyebrow">For Isadora</div>
+  <div class="eyebrow">For Isadora — revised</div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
   <div class="inner">
-    <div class="kicker reveal">September 2026 — A presence plan</div>
-    <h1 class="reveal" style="margin-top:18px">Be known for <em>your</em> Tokyo.</h1>
-    <p class="lede reveal">Louise Jorge and Felicia Aveklew use the same engine. It runs better with a Swede who has lived in Tokyo for ten years. Keep the engine. Keep your own voice.</p>
-    <div class="meta reveal"><span>Low budget first</span><span>Swedish · English</span><span>Based in Tokyo</span></div>
+    <div class="kicker reveal">September 2026 — Version two, after listening</div>
+    <h1 class="reveal">Seen, <em>as you are.</em></h1>
+    <p class="lede reveal">Content, clients, and modelling when it comes. Built around your energy, your aesthetic, and a team that holds the camera, so you don't carry it alone.</p>
+    <div class="meta reveal"><span>No talking required</span><span>One real clip a week</span><span>Energy first</span></div>
   </div>
 </section>
 
-<!-- 01 STUDY -->
+<!-- 01 HEARD -->
 <section>
   <div class="head">
     <div class="num">01</div>
     <div>
-      <div class="eyebrow">The two women, read closely</div>
-      <h2 class="sec" style="margin-top:14px">They did not get lucky. <em>They built a system.</em></h2>
+      <div class="eyebrow">What we heard</div>
+      <h2 class="sec">This version starts <em>from you,</em> not from research.</h2>
     </div>
   </div>
-  <div class="study">
-    <article class="person reveal">
-      <div class="handle">@louisejorge</div>
-      <h3>Louise Jorge</h3>
-      <div class="tag">A Swede abroad who never left the Swedish market.</div>
-      <ul class="facts">
-        <li><b>Since</b>YouTube from 2012. About 84,000 subscribers and 540 videos.</li>
-        <li><b>Deals</b>Monthly NA-KD ambassador since 2017. Björn Borg, Gina Tricot, and Edblad, a Swedish jewelry brand.</li>
-        <li><b>Network</b>Represented through Nordic creator networks such as We Are Era and United Screens.</li>
-        <li><b>Base</b>New York. Since December 2024 she has led social and creative content at LoveShackFancy.</li>
-      </ul>
-      <p class="lesson">Distance is not the problem. <em>Distance is the story.</em></p>
-    </article>
-    <article class="person reveal">
-      <div class="handle">@feliciaaveklew</div>
-      <h3>Felicia Aveklew</h3>
-      <div class="tag">Craft first. Then a brand of her own.</div>
-      <ul class="facts">
-        <li><b>Since</b>Active from 2011. Trained make-up artist and hair stylist.</li>
-        <li><b>Reach</b>About 250,000 on Instagram. A Kylie Jenner repost in 2016 lifted her early.</li>
-        <li><b>Own</b>Founder of Lowd Cosmetics. Host of the podcast Uppkopplad.</li>
-        <li><b>Work</b>Brand enquiries go to a management address, not her DMs.</li>
-      </ul>
-      <p class="lesson">Skill makes people <em>trust the product.</em></p>
-    </article>
+  <div class="heard">
+    <article class="reveal"><div class="q">You are <em>meant for more.</em></div><p>You want to be recognised, invited, and chosen. That is a fair goal, and the plan aims at it.</p></article>
+    <article class="reveal"><div class="q">A creator, <em>not an opinion.</em></div><p>Aesthetic, inspiring, interesting. You share how you see things, not what you think about everything.</p></article>
+    <article class="reveal"><div class="q">Ideas are fine. <em>Doing it alone</em> is hard.</div><p>What you need is execution: someone to plan the shots, film, and edit.</p></article>
+    <article class="reveal"><div class="q">Your best moments <em>are live.</em></div><p>The yacht. Paris. Full attention, warm energy, making people happy just by talking. That is a real gift.</p></article>
+    <article class="reveal"><div class="q">Energy <em>decides</em> the week.</div><p>Your body sets the limit right now. The plan fits inside it, so choosing is built in, not a failure.</p></article>
+    <article class="reveal"><div class="q">International rooms, <em>not local ones.</em></div><p>Japanese brand events are made for Japanese audiences. Your invitations will come from a different door.</p></article>
   </div>
 </section>
 
-<!-- 02 SHARED -->
+<!-- 02 SHIFT -->
 <section class="stone">
   <div class="head">
     <div class="num">02</div>
     <div>
-      <div class="eyebrow">What they share</div>
-      <h2 class="sec" style="margin-top:14px">Five habits. <em>None of them cost money.</em></h2>
+      <div class="eyebrow">What changed from version one</div>
+      <h2 class="sec">Less to do. <em>More of you in it.</em></h2>
     </div>
   </div>
-  <div class="rows">
-    <div class="row reveal"><div class="n">01</div><h3>One clear subject.</h3><p>Fashion for Louise. Beauty for Felicia. A stranger can describe each of them in three words.</p></div>
-    <div class="row reveal"><div class="n">02</div><h3>Formats that repeat.</h3><p>Monthly favourites, tutorials, hauls. Brands pay for a format they can book again next month.</p></div>
-    <div class="row reveal"><div class="n">03</div><h3>Years, not months.</h3><p>Both started in 2011–2012. Their audience is the interest on a decade of showing up.</p></div>
-    <div class="row reveal"><div class="n">04</div><h3>Long relationships.</h3><p>Ambassadorships over one-off posts. NA-KD has booked Louise since 2017.</p></div>
-    <div class="row reveal"><div class="n">05</div><h3>A second act.</h3><p>Louise now leads social for a New York brand. Felicia sells her own cosmetics. Fame was the door, not the room.</p></div>
+  <div class="shift">
+    <div class="r reveal"><div class="was"><span class="hd">Before</span></div><div></div><div class="now"><span class="hd">Now</span></div></div>
+    <div class="r reveal"><div class="was">A jewelry brand at the centre</div><div class="arrow">→</div><div class="now">Content, clients, and modelling when it comes</div></div>
+    <div class="r reveal"><div class="was">Talk to camera, YouTube vlogs</div><div class="arrow">→</div><div class="now">Visual first. Your voice only when you want it</div></div>
+    <div class="r reveal"><div class="was">36 posts in 90 days, made alone</div><div class="arrow">→</div><div class="now">One real clip a week. Someone else films and edits</div></div>
+    <div class="r reveal"><div class="was">A weekly shoot-and-edit routine</div><div class="arrow">→</div><div class="now">One content day a month, on a good-energy week</div></div>
+    <div class="r reveal"><div class="was">Felicia as a model to copy</div><div class="arrow">→</div><div class="now">Louise for life as content. Felicia only for having a signature</div></div>
+    <div class="r reveal"><div class="was">Fame as a follower number</div><div class="arrow">→</div><div class="now">Recognised, invited, and free to choose</div></div>
   </div>
 </section>
 
-<!-- 03 ASSETS -->
-<section>
+<!-- 03 ENGINE -->
+<section class="night">
   <div class="head">
     <div class="num">03</div>
     <div>
-      <div class="eyebrow">What only Isadora has</div>
-      <h2 class="sec" style="margin-top:14px">You start <em>ahead</em> of where they started.</h2>
+      <div class="eyebrow">How it fits together</div>
+      <h2 class="sec">One habit. <em>Three doors.</em></h2>
+    </div>
+  </div>
+  <div class="engine">
+    <div class="core reveal">
+      <div class="kicker">The habit</div>
+      <h3>Your real life, beautifully filmed.</h3>
+      <p>Short clips from things you already do, plus a monthly content day. No separate work for each goal: the same footage opens all three doors.</p>
+    </div>
+    <div class="outs">
+      <article class="out reveal"><div class="role">Door one</div><h3>Invitations</h3><p>PR events, gifting, brand partnerships. Brands invite people whose feed looks like their world.</p><div class="how">The feed is the invitation.</div></article>
+      <article class="out reveal"><div class="role">Door two</div><h3>Clients</h3><p>Creative direction projects. Every clip shows your eye for light, styling, and mood.</p><div class="how">The feed is the portfolio.</div></article>
+      <article class="out reveal"><div class="role">Door three</div><h3>Modelling</h3><p>Casting teams check Instagram. Moving footage shows what a comp card can't.</p><div class="how">The feed is the casting tape.</div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 04 WEEKLY CLIP -->
+<section>
+  <div class="head">
+    <div class="num">04</div>
+    <div>
+      <div class="eyebrow">The one habit</div>
+      <h2 class="sec">One real clip <em>a week.</em></h2>
     </div>
   </div>
   <div class="split">
-    <figure class="frame reveal">
-      <img src="img/jewelry-still-life.jpg" alt="Gold earrings and a ring on ivory linen beside a Japanese ceramic dish" loading="lazy">
-      <figcaption>Mood — the studio, in Tokyo light</figcaption>
+    <figure class="frame tall reveal">
+      <img src="img/street-style.jpg" alt="Woman in ivory silk and gold jewelry crossing a Tokyo street" loading="lazy">
+      <figcaption>Mood — a moment you were already living</figcaption>
     </figure>
     <div>
-      <ul class="assets reveal">
-        <li><div class="k">10 yrs</div><div class="v"><b>Tokyo, since 2016</b>Not a visitor. The city is home, and it shows.</div></li>
-        <li><div class="k">2014</div><div class="v"><b>Miss Universe Sweden finalist</b>Then model work with Shiseido, Nylon Japan, and Vogue Japan.</div></li>
-        <li><div class="k">Founder</div><div class="v"><b>ISADÓRA JEWELS</b>Creative director of her own brand. A product already exists.</div></li>
-        <li><div class="k">Builder</div><div class="v"><b>Fetch and Match Tokyo</b>Brand, store, and model, produced from zero.</div></li>
-        <li><div class="k">~43k</div><div class="v"><b>Instagram audience</b>Per the March 2026 company plan. Swedish and English.</div></li>
+      <ul class="rules reveal">
+        <li><b>From</b><span>Something already in your week. Seeing Miho. Friday's event. A walk, a dinner, a fitting.</span></li>
+        <li><b>Length</b><span>10 to 30 seconds. A few moments, not a story.</span></li>
+        <li><b>Look</b><span>Real light, light edits. <em>You, as you actually look.</em></span></li>
+        <li><b>Voice</b><span>Not needed. Music, or the room's own sound, plus one line of text if you like.</span></li>
+        <li><b>Who</b><span>Keigo or a friend films when possible. The editor cuts it. You approve and post.</span></li>
       </ul>
-      <p class="pull reveal">Louise had to explain New York. <em>You already live inside the city the world wants to see.</em></p>
+      <p class="pull reveal">"Anyone can Photoshop a picture. In video they see <em>you actually look like that.</em>"<small>Sophia's advice, and the heart of this plan</small></p>
     </div>
   </div>
 </section>
 
-<!-- 04 POSITION -->
-<section class="night position">
-  <div class="head">
-    <div class="num">04</div>
-    <div><div class="eyebrow">The sentence</div></div>
-  </div>
-  <div class="kicker reveal">Say it in one line</div>
-  <h1 class="reveal">Nordic glamour, <em>lived in Tokyo.</em></h1>
-  <p class="lede reveal">A Swedish designer's eye on Tokyo. Style, craft, and small rituals. In Swedish and English.</p>
-  <div class="words reveal"><span>Glamorous</span><span>Tokyo</span><span>Crafted</span></div>
-  <div class="test reveal">
-    <div><b>Her words win.</b>This line is a draft. If she would say it differently, her version is the right one.</div>
-    <div><b>The friend test.</b>After one scroll of the grid, can a friend repeat the three words back?</div>
-    <div><b>The no test.</b>If a post fits none of the three words, it does not go on the grid. Stories are free.</div>
-  </div>
-</section>
-
-<!-- 05 PILLARS -->
-<section>
+<!-- 05 ENERGY -->
+<section class="stone">
   <div class="head">
     <div class="num">05</div>
     <div>
-      <div class="eyebrow">What to post</div>
-      <h2 class="sec" style="margin-top:14px">Four pillars. <em>Every post lives in one.</em></h2>
+      <div class="eyebrow">Energy first</div>
+      <h2 class="sec">The week bends. <em>The habit survives.</em></h2>
     </div>
   </div>
-  <div class="pillars">
-    <article class="pillar reveal">
-      <img src="img/street-style.jpg" alt="Woman in ivory silk and gold jewelry crossing a Tokyo street" loading="lazy">
-      <div class="pct"><span>I — Style</span><b>40%</b></div>
-      <h3>Tokyo, styled</h3>
-      <p>Outfits and jewelry in real places. Her glamour against the city's calm.</p>
-      <div class="ex">Series: "Where I'd wear this." "One piece, three Tokyo days."</div>
+  <div class="energy">
+    <article class="lvl reveal">
+      <div class="dot" style="background:#8a9a6e"></div>
+      <div class="when">A good-energy week</div>
+      <h3>Make something bigger</h3>
+      <p>A content day with three looks, or a small hosted brunch. Only if it sounds fun.</p>
+      <div class="out2">Fills the bank for a month</div>
     </article>
-    <article class="pillar reveal">
-      <img src="img/fika-tokyo.jpg" alt="Cardamom bun and matcha on a wooden counter" loading="lazy">
-      <div class="pct"><span>II — Life</span><b>25%</b></div>
-      <h3>Svensk i Tokyo</h3>
-      <p>Culture gaps, daily life, humour. Swedish voice, English subtitles.</p>
-      <div class="ex">Series: "Fika in Tokyo." "Things Sweden should steal from Japan."</div>
+    <article class="lvl reveal">
+      <div class="dot" style="background:#c9b79c"></div>
+      <div class="when">A normal week</div>
+      <h3>Capture one moment</h3>
+      <p>Film a few seconds of something already planned. Nothing extra is added to the week.</p>
+      <div class="out2">One clip</div>
     </article>
-    <article class="pillar reveal">
-      <img src="img/studio-hands.jpg" alt="Hands sketching an earring design beside gold chains on an oak workbench" loading="lazy">
-      <div class="pct"><span>III — Craft</span><b>20%</b></div>
-      <h3>The studio</h3>
-      <p>ISADÓRA JEWELS from sketch to drop. Makers, materials, packing orders.</p>
-      <div class="ex">Felicia's lesson: craft on camera sells the product.</div>
+    <article class="lvl reveal">
+      <div class="dot" style="background:#a86f5c"></div>
+      <div class="when">A low week</div>
+      <h3>Rest. Post from the bank</h3>
+      <p>Nothing new is made. The editor posts a clip that is already finished. This is planned, not a failure.</p>
+      <div class="out2">Zero effort from you</div>
     </article>
-    <article class="pillar reveal">
-      <img src="img/beauty-ritual.jpg" alt="Evening vanity with skincare and gold jewelry" loading="lazy">
-      <div class="pct"><span>IV — Ritual</span><b>15%</b></div>
-      <h3>Rituals</h3>
-      <p>J-beauty and slow evenings, for Nordic skin. It opens beauty deals, too.</p>
-      <div class="ex">Series: "Sunday reset, Tokyo." "What I buy at the drugstore."</div>
-    </article>
+  </div>
+  <div class="bank reveal">
+    <div class="big">4 weeks</div>
+    <p>The bank: always keep about a month of finished clips in reserve. One content day refills it. That is what lets you choose freely without the account going quiet.</p>
   </div>
 </section>
 
-<!-- 06 PLATFORMS -->
-<section class="night">
+<!-- 06 TEAM -->
+<section>
   <div class="head">
     <div class="num">06</div>
     <div>
-      <div class="eyebrow">Where to show up</div>
-      <h2 class="sec" style="margin-top:14px">Four places. <em>One camera roll.</em></h2>
+      <div class="eyebrow">Execution — the part you asked for</div>
+      <h2 class="sec">You show up. <em>The team does the rest.</em></h2>
     </div>
   </div>
-  <div class="platforms">
-    <article class="platform reveal">
-      <div class="role">Home</div>
-      <h3>Instagram</h3>
-      <p>Reels for reach. Carousels for saves. Stories every day for warmth. The grid is her shop window.</p>
-      <div class="cad">3 posts a week</div>
-    </article>
-    <article class="platform reveal">
-      <div class="role">Discovery</div>
-      <h3>TikTok</h3>
-      <p>The same vertical videos, re-cut with native captions. Strangers find her here first.</p>
-      <div class="cad">3 a week, reused</div>
-    </article>
-    <article class="platform reveal">
-      <div class="role">Memory</div>
-      <h3>YouTube</h3>
-      <p>"A week in Tokyo." "Making a collection." Search keeps a vlog working for years. Louise's base.</p>
-      <div class="cad">1 vlog every 2 weeks</div>
-    </article>
-    <article class="platform reveal">
-      <div class="role">Quiet traffic</div>
-      <h3>Pinterest</h3>
-      <p>Every product shot becomes a pin to ISADÓRA JEWELS. Pins keep sending visitors long after posting.</p>
-      <div class="cad">15 minutes a week</div>
-    </article>
+  <div class="team">
+    <article class="member you reveal"><div class="role">You</div><h3>Isadora</h3><p>Choose the looks, approve the plan, be yourself on the day. Say no to anything that doesn't feel like you.</p><div class="cost">Your eye and your presence</div></article>
+    <article class="member reveal"><div class="role">Ideas</div><h3>Sense Tokyo</h3><p>A monthly moodboard, shot list, and calendar, so you never start from a blank page.</p><div class="cost">Included</div></article>
+    <article class="member reveal"><div class="role">Manager</div><h3>Keigo</h3><p>Japanese emails, PR outreach, bookings, and the first read of comments.</p><div class="cost">Included</div></article>
+    <article class="member reveal"><div class="role">Camera</div><h3>A shooter</h3><p>Start with Keigo, or a trade shoot with another foreign creator in Tokyo. Hire an English-speaking freelancer once the format works.</p><div class="cost">¥0 first, then about ¥30–80k per half day</div></article>
+    <article class="member reveal"><div class="role">Edit</div><h3>An editor</h3><p>Remote, cuts the clips to your look and keeps the bank full. Coconala or Lancers in Japan, or a freelancer abroad.</p><div class="cost">Roughly ¥2–5k per short clip</div></article>
   </div>
-  <div class="later-line reveal"><span><b>Not yet:</b> a podcast, X, a blog.</span><span>Felicia's podcast came after the audience, not before.</span><span><b>LinkedIn:</b> one post a month as creative director, for client work.</span></div>
+  <p class="note reveal" style="margin-top:22px">Yen figures are rough market estimates as of September 2026, not quotes. Spend nothing until two free content days show which formats you enjoy making.</p>
 </section>
 
-<!-- 07 AUDIENCES -->
-<section>
+<!-- 07 CONTENT DAY -->
+<section class="stone">
   <div class="head">
     <div class="num">07</div>
     <div>
-      <div class="eyebrow">Who it is for</div>
-      <h2 class="sec" style="margin-top:14px">Three audiences. <em>Each one pays differently.</em></h2>
+      <div class="eyebrow">The content day</div>
+      <h2 class="sec">Three looks. <em>Half a day.</em> A month of posts.</h2>
     </div>
   </div>
-  <div class="aud">
-    <article class="reveal">
-      <div class="flag">Sweden</div>
-      <h3>Brands and press</h3>
-      <p>Swedish brands book Swedish creators, wherever they live. Louise proves it from New York. "Svensk i Tokyo" is also a story Swedish media like.</p>
-      <div class="lang">Speak Swedish on camera. Add English subtitles.</div>
-    </article>
-    <article class="reveal">
-      <div class="flag">Global</div>
-      <h3>Tokyo curiosity</h3>
-      <p>The world wants to see Tokyo from the inside. This is where reach and follower growth come from.</p>
-      <div class="lang">English first line in every caption.</div>
-    </article>
-    <article class="reveal">
-      <div class="flag">Japan</div>
-      <h3>Brands and inbound</h3>
-      <p>Japanese brands want an international face to reach visitors. She has worked with Shiseido and Vogue Japan before.</p>
-      <div class="lang">Japanese subtitles on selected Reels. Keigo handles Japanese correspondence.</div>
-    </article>
+  <div class="split rev">
+    <div>
+      <ul class="rules reveal">
+        <li><b>When</b><span>Once a month, only on a good-energy week. Moving the date is always allowed.</span></li>
+        <li><b>Where</b><span>One or two places close together. Less travel, more energy for the camera.</span></li>
+        <li><b>Time</b><span>About four hours, with breaks built in. Hair and makeup done once, adjusted per look.</span></li>
+        <li><b>Plan</b><span>Sense Tokyo sends the shot list three days before. <em>You only decide the outfits.</em></span></li>
+      </ul>
+    </div>
+    <figure class="frame reveal">
+      <img src="img/content-day.jpg" alt="A photographer filming a blonde woman in a camel coat on a Tokyo backstreet, clothes rail behind" loading="lazy">
+      <figcaption>Someone else holds the camera</figcaption>
+    </figure>
+  </div>
+  <div class="looks">
+    <article class="look reveal"><div class="n">Look 01</div><h3>Day, Tokyo</h3><p>Relaxed and elegant. A walk, a café, a street with good light.</p></article>
+    <article class="look reveal"><div class="n">Look 02</div><h3>The detail</h3><p>Texture, hands, hair, fabric in motion. The quiet shots brands love.</p></article>
+    <article class="look reveal"><div class="n">Look 03</div><h3>Evening glam</h3><p>Your signature: the glamour people remember you for, at blue hour.</p></article>
+  </div>
+  <div class="shots reveal">
+    <div><b>9–12</b><span>Short clips</span></div>
+    <div><b>30+</b><span>Photos</span></div>
+    <div><b>3</b><span>Transitions, one per look</span></div>
+    <div><b>1</b><span>Set of modelling digitals, twice a year</span></div>
   </div>
 </section>
 
-<!-- 08 WEEK -->
-<section class="stone">
+<!-- 08 SIGNATURE -->
+<section class="night">
   <div class="head">
     <div class="num">08</div>
     <div>
-      <div class="eyebrow">The rhythm</div>
-      <h2 class="sec" style="margin-top:14px">Shoot once. <em>Post all week.</em></h2>
+      <div class="eyebrow">Your signature — what to learn from Felicia</div>
+      <h2 class="sec">Be the one people <em>think of first.</em></h2>
     </div>
   </div>
-  <div class="week reveal">
-    <div class="day"><div class="d">Mon</div><div class="t">Plan · 30 min</div><p>Pick three ideas from the list. Reply to last week's comments.</p></div>
-    <div class="day"><div class="d">Tue</div><div class="t">Shoot · 3 h</div><p>One place, two outfits, eight clips. Stills from the same set.</p></div>
-    <div class="day"><div class="d">Wed</div><div class="t">Edit · 2 h</div><p>Cut in CapCut. Write captions. Schedule the week.</p></div>
-    <div class="day"><div class="d">Thu</div><div class="t">Post</div><p>Reel on Instagram and TikTok. Stories behind it.</p></div>
-    <div class="day off"><div class="d">Fri</div><div class="t">Off</div><p>Stories only, if she feels like it.</p></div>
-    <div class="day"><div class="d">Sat</div><div class="t">Post</div><p>Carousel or second Reel. Pin the product shots.</p></div>
-    <div class="day"><div class="d">Sun</div><div class="t">Every other</div><p>YouTube vlog goes live. Third Reel is a cut-down of it.</p></div>
-  </div>
-  <div class="weeksum reveal">
-    <div class="big">6–8 h<small>a week, in total</small></div>
-    <p class="note" style="max-width:34rem">Plus 15 minutes a day of genuine comments on ten accounts in her world. It fits beside one client project at a time, as in the client plan.</p>
+  <div class="split">
+    <figure class="frame tall reveal">
+      <img src="img/beauty-ritual.jpg" alt="Evening vanity with skincare and a lamp" loading="lazy">
+      <figcaption>Mood — the transformation, before the evening</figcaption>
+    </figure>
+    <div>
+      <p class="lede reveal" style="margin-top:0">Felicia is the queen of makeup transformations, and Halloween is her big night. You don't need her personality, only the idea: one format you are clearly the best at.</p>
+      <ul class="rules reveal" style="margin-top:28px">
+        <li><b>Candidate</b><span><em>The glam transformation.</em> Everyday Tokyo to full evening look, in one clip.</span></li>
+        <li><b>Why you</b><span>Glamour is what people already remember you for, since Miss Universe Sweden.</span></li>
+        <li><b>First test</b><span>Halloween, Saturday 31 October. A full-glam look, planned and filmed with help.</span></li>
+        <li><b>Growth</b><span>Practise it in public. Getting visibly better is recognition for a skill, not just for how you look.</span></li>
+      </ul>
+      <p class="note reveal" style="margin-top:20px;color:#8c8275">A candidate, not a decision. If another format feels more like you, that one wins.</p>
+    </div>
   </div>
 </section>
 
-<!-- 09 LOOK -->
+<!-- 09 INVITATIONS -->
 <section>
   <div class="head">
     <div class="num">09</div>
     <div>
-      <div class="eyebrow">Look and feel</div>
-      <h2 class="sec" style="margin-top:14px">Recognisable <em>before</em> the name loads.</h2>
+      <div class="eyebrow">Getting invited</div>
+      <h2 class="sec">Fewer rooms. <em>The right ones.</em></h2>
     </div>
   </div>
-  <div class="split rev">
-    <ul class="rules reveal">
-      <li><b>Light</b><span>Window light or blue hour. Never flat overhead light.</span></li>
-      <li><b>Palette</b><span>Ivory, sand, gold, night. One editing preset on every photo.
-        <span class="swatches"><i style="background:#f5f1ea"></i><i style="background:#c9b79c"></i><i style="background:#b8935a"></i><i style="background:#1b1714"></i></span></span></li>
-      <li><b>Frame</b><span>Leave space. One piece of jewelry in every frame. <em>That is the signature.</em></span></li>
-      <li><b>Voice</b><span>Talk to camera. Her own voice builds trust faster than trending audio.</span></li>
-      <li><b>Sign-off</b><span>The same last line every time. For example, <em>"Hej då, from Tokyo."</em></span></li>
-    </ul>
-    <figure class="frame reveal">
-      <img src="img/creator-desk.jpg" alt="Phone on a small tripod, clip microphone, notebook and tea on an oak desk" loading="lazy">
-      <figcaption>The whole studio fits on one desk</figcaption>
-    </figure>
+  <div class="rooms">
+    <article class="room reveal"><div class="n">01</div><h3>Keigo as your manager</h3><p>A work email in your bio that Keigo answers, in Japanese when needed. Language stops being the block.</p></article>
+    <article class="room reveal"><div class="n">02</div><h3>International brands in Tokyo</h3><p>Global fashion and beauty houses' Japan PR teams, when a campaign wants an English-speaking audience.</p></article>
+    <article class="room reveal"><div class="n">03</div><h3>Hotels and openings</h3><p>Luxury hotels, restaurants, and new venues that want international guests to see them.</p></article>
+    <article class="room reveal"><div class="n">04</div><h3>Nordic and embassy events</h3><p>Swedish and Nordic brands in Tokyo, and the Embassy of Sweden's calendar. Your home crowd, here.</p></article>
   </div>
+  <div class="split" style="margin-top:72px">
+    <figure class="frame wide reveal">
+      <img src="img/hosted-brunch.jpg" alt="A small hosted brunch at a long oak table in a bright Tokyo apartment" loading="lazy">
+      <figcaption>Host the room you want to be in</figcaption>
+    </figure>
+    <div class="reveal">
+      <div class="kicker">The fifth door</div>
+      <h3 style="font-size:clamp(30px,3vw,42px);line-height:1.05;margin:12px 0 14px">Host it yourself.</h3>
+      <p class="lede" style="margin-top:0">Once a quarter, on a good week: a small brunch for the international crowd you like. It recreates your yacht and Paris moments, gives you something real to share, and shows brands you can fill a room. Later, a brand can sponsor the table.</p>
+    </div>
+  </div>
+  <div class="honest reveal">Honestly: most PR events in Tokyo are made for Japanese audiences, and we have not checked which international PR teams invite English-speaking creators. That is a guess to test in October, one email at a time, not a promise.</div>
 </section>
 
-<!-- 10 LEVERS -->
+<!-- 10 CLIENTS + MODELLING -->
 <section class="stone">
   <div class="head">
     <div class="num">10</div>
     <div>
-      <div class="eyebrow">From followers to fame</div>
-      <h2 class="sec" style="margin-top:14px">Posting builds trust. <em>These build reach.</em></h2>
+      <div class="eyebrow">The other two tracks</div>
+      <h2 class="sec">Clients and modelling, <em>fed by the same footage.</em></h2>
     </div>
   </div>
-  <div class="levers">
-    <article class="lever reveal"><div class="n">01</div><h3>Collab posts</h3><p>Instagram's Collab feature shows one post to both audiences. One a month with a Tokyo creator, or a Swede visiting Japan.</p></article>
-    <article class="lever reveal"><div class="n">02</div><h3>Swedish press</h3><p>Pitch one story: a Swedish designer in Tokyo. Lifestyle titles and podcasts at home. One strong feature beats a month of posts.</p></article>
-    <article class="lever reveal"><div class="n">03</div><h3>The Swedish room in Tokyo</h3><p>Embassy of Sweden events and the Swedish Chamber of Commerce in Japan. Nordic brands launching here need a face.</p></article>
-    <article class="lever reveal"><div class="n">04</div><h3>Japanese media</h3><p>Reconnect with the Nylon Japan and Vogue Japan network. A Japanese caption line lets editors share her.</p></article>
-    <article class="lever reveal"><div class="n">05</div><h3>A Nordic network</h3><p>After 90 steady days, approach the kind of network that represents Louise. They sell her to Swedish brands for a commission, not a fee.</p></article>
-    <article class="lever reveal"><div class="n">06</div><h3>Her own drops</h3><p>Every ISADÓRA JEWELS release is an event: a countdown, the making-of, a launch-day Live.</p></article>
+  <div class="tracks">
+    <article class="track reveal">
+      <div class="kicker">Clients</div>
+      <h3>Creative direction, one project at a time.</h3>
+      <p class="lede">The client plan still stands: fixed projects, English or Swedish, from home.</p>
+      <ul>
+        <li><b>Proof:</b> Fetch and Match Tokyo, and your own feed as the live portfolio.</li>
+        <li><b>Energy rule:</b> never a content day in the same week as a client deadline.</li>
+        <li><b>Invoicing:</b> through Sense Tokyo, in euros or kronor.</li>
+      </ul>
+      <a class="btn" href="https://babibobaan.github.io/sense-tokyo-for-isadora/">Open the client plan</a>
+    </article>
+    <article class="track reveal">
+      <div class="kicker">Modelling, when it comes</div>
+      <h3>Stay ready. Don't chase.</h3>
+      <p class="lede">Past work with Shiseido, Nylon Japan, and Vogue Japan still counts. The job now is to be easy to book.</p>
+      <ul>
+        <li><b>Digitals:</b> fresh natural shots every six months, taken on a content day.</li>
+        <li><b>Comp card:</b> one current PDF with measurements and your best frames.</li>
+        <li><b>Agency:</b> Keigo checks whether your Tokyo representation is still active.</li>
+        <li><b>Feed:</b> the weekly clips show casting how you move.</li>
+      </ul>
+    </article>
   </div>
 </section>
 
-<!-- 11 LADDER -->
+<!-- 11 VOICE -->
 <section class="night">
   <div class="head">
     <div class="num">11</div>
     <div>
-      <div class="eyebrow">How attention becomes income</div>
-      <h2 class="sec" style="margin-top:14px">Five rungs. <em>Climb in order.</em></h2>
+      <div class="eyebrow">The camera, at your pace — optional</div>
+      <h2 class="sec">Your voice comes <em>when it's ready.</em></h2>
     </div>
   </div>
-  <div class="ladder">
-    <div class="rung reveal"><div class="n">1</div><h3>Gifted</h3><p>Only brands she would wear anyway. Saying no protects the grid.</p><div class="who">Now</div></div>
-    <div class="rung reveal"><div class="n">2</div><h3>Paid posts</h3><p>A one-page media kit with rates. A common rule of thumb is about US$100 per 10,000 followers per post. Charge more for Reels and usage rights.</p><div class="who">Month 3</div></div>
-    <div class="rung reveal"><div class="n">3</div><h3>Ambassador</h3><p>Monthly retainers for six to twelve months. The same format each month, booked in advance.</p><div class="who">Louise's model</div></div>
-    <div class="rung reveal hi"><div class="n">4</div><h3>Own product</h3><p>ISADÓRA JEWELS, sold by her own content. The margin stays with her.</p><div class="who">Felicia's model</div></div>
-    <div class="rung reveal hi"><div class="n">5</div><h3>Direction</h3><p>Brands hire the eye behind the feed as creative director. This connects to the client plan.</p><div class="who">Sense Tokyo invoices</div></div>
+  <div class="steps">
+    <div class="step reveal"><div class="n">01 — Now</div><h3>Silent visuals</h3><p>Outfits, places, details. No words at all.</p></div>
+    <div class="step reveal"><div class="n">02</div><h3>Text on screen</h3><p>One short line. Where you are, what you're wearing.</p></div>
+    <div class="step reveal"><div class="n">03</div><h3>Voiceover</h3><p>Recorded alone, redone until you like it. Full control.</p></div>
+    <div class="step reveal"><div class="n">04</div><h3>Talking in Stories</h3><p>Gone in 24 hours. Close Friends first, if you prefer.</p></div>
+    <div class="step reveal"><div class="n">05</div><h3>Talking in Reels</h3><p>Only when step four feels easy, if ever.</p></div>
   </div>
-  <a class="btn" href="https://babibobaan.github.io/sense-tokyo-for-isadora/">Open the client plan</a>
+  <div class="guard reveal">
+    <div><b>Move up when bored.</b>Go to the next step only when the current one feels easy. Staying at step one is a complete plan.</div>
+    <div><b>Filter first.</b>Turn on Instagram's Hidden Words. Keigo reads comments before you do, if you want.</div>
+    <div><b>Nothing to cancel.</b>You share how you see the world, not opinions about it. Aesthetic content rarely draws that kind of heat.</div>
+  </div>
 </section>
 
-<!-- 12 BUDGET -->
+<!-- 12 OCTOBER -->
 <section>
   <div class="head">
     <div class="num">12</div>
     <div>
-      <div class="eyebrow">Budget</div>
-      <h2 class="sec" style="margin-top:14px">Start at zero. <em>Spend only on proof.</em></h2>
+      <div class="eyebrow">October, the first month</div>
+      <h2 class="sec">Start with <em>what's already on the calendar.</em></h2>
     </div>
   </div>
-  <div class="budget">
-    <article class="tier rec reveal">
-      <div class="when">Week 1 — recommended start</div>
-      <div class="yen">¥0</div>
-      <h3>What she already has</h3>
-      <ul>
-        <li>Her phone, window light, blue hour</li>
-        <li>CapCut and Canva, free plans</li>
-        <li>Meta Business Suite to schedule</li>
-        <li>Keigo or a friend behind the camera</li>
-      </ul>
-    </article>
-    <article class="tier reveal">
-      <div class="when">After 4 weeks of posting</div>
-      <div class="yen">~¥30,000<small> once</small></div>
-      <h3>Three small tools</h3>
-      <ul>
-        <li>Tripod with Bluetooth remote</li>
-        <li>Wireless clip-on microphone</li>
-        <li>Small clip-on soft light</li>
-        <li>Buy nothing before the habit exists</li>
-      </ul>
-    </article>
-    <article class="tier reveal">
-      <div class="when">Optional, after month 3</div>
-      <div class="yen">~¥30–60k<small> / month</small></div>
-      <h3>Buy back time</h3>
-      <ul>
-        <li>A part-time editor via Coconala or Lancers</li>
-        <li>Or one professional shoot a month</li>
-        <li>Only once two formats are proven</li>
-        <li>Stop if saves and enquiries do not rise</li>
-      </ul>
-    </article>
+  <div class="cal">
+    <div class="wk reveal"><div class="d">Sep 28 – Oct 4<small>Week one</small></div><h3>Film Friday's event and the visit to Miho.</h3><p>A few seconds each, on the phone. The first two clips for the bank. Keigo sets up the work email.</p></div>
+    <div class="wk reveal"><div class="d">Oct 5 – 11<small>Week two</small></div><h3>Find the camera.</h3><p>Ask one foreign creator in Tokyo about a trade shoot. Sense Tokyo sends the first moodboard and shot list.</p></div>
+    <div class="wk reveal"><div class="d">Oct 12 – 18<small>Week three</small></div><h3>First content day <span class="opt">if energy allows</span></h3><p>Three looks, half a day, filmed by the trade partner or Keigo. The bank reaches about four weeks.</p></div>
+    <div class="wk reveal"><div class="d">Oct 19 – 25<small>Week four</small></div><h3>Media kit and ten emails.</h3><p>Keigo drafts a one-page media kit and writes to ten international PR teams, hotels, and Nordic contacts. You only approve the photos.</p></div>
+    <div class="wk reveal"><div class="d">Oct 26 – 31<small>Week five</small></div><h3>Halloween glam <span class="opt">optional</span></h3><p>Film the transformation mid-week. Post it Friday 30 or Saturday 31 October.</p></div>
   </div>
-  <p class="note reveal" style="margin-top:22px">Yen figures are rough Japanese market estimates as of September 2026, not quotes. Check prices before buying.</p>
+  <p class="note reveal" style="margin-top:20px">Dates are flexible. If a week is low, it moves, and the bank covers the gap.</p>
 </section>
 
-<!-- 13 NINETY DAYS -->
+<!-- 13 MEASURE -->
 <section class="stone">
   <div class="head">
     <div class="num">13</div>
     <div>
-      <div class="eyebrow">The first ninety days</div>
-      <h2 class="sec" style="margin-top:14px">Measure the work, <em>not the follower count.</em></h2>
+      <div class="eyebrow">How we'll know it works</div>
+      <h2 class="sec">Not followers. <em>Five honest signals.</em></h2>
     </div>
   </div>
-  <div class="phases">
-    <article class="phase reveal"><div class="when">Days 1–14</div><h3>Set the stage</h3><ul><li>Choose her sentence and three words</li><li>Rewrite the bio. Four Story highlights</li><li>One editing preset</li><li>Film ten clips before posting any</li></ul></article>
-    <article class="phase reveal"><div class="when">Days 15–45</div><h3>Show up</h3><ul><li>Three posts a week, mostly Reels</li><li>First YouTube vlog</li><li>First Collab post</li><li>Stories daily</li></ul></article>
-    <article class="phase reveal"><div class="when">Days 46–75</div><h3>Open the door</h3><ul><li>One-page media kit, English and Swedish</li><li>Pitch five Swedish and five Tokyo brands</li><li>One press pitch in Sweden</li><li>One Swedish-community event in Tokyo</li></ul></article>
-    <article class="phase reveal"><div class="when">Days 76–90</div><h3>Keep what works</h3><ul><li>Read the numbers</li><li>Keep the two strongest formats. Drop the rest</li><li>Approach one Nordic creator network</li><li>Plan the next ISADÓRA drop around content</li></ul></article>
-  </div>
-  <div class="target reveal">
-    <div><b>36</b><span>Posts published</span></div>
-    <div><b>5</b><span>YouTube vlogs</span></div>
-    <div><b>3</b><span>Collab posts</span></div>
-    <div><b>1</b><span>Paid partnership</span></div>
-  </div>
-</section>
-
-<!-- 14 PROFILE -->
-<section>
-  <div class="head">
-    <div class="num">14</div>
-    <div>
-      <div class="eyebrow">The first thing strangers see</div>
-      <h2 class="sec" style="margin-top:14px">A bio that <em>does the introduction.</em></h2>
-    </div>
-  </div>
-  <div class="split">
-    <div class="bio reveal">
-      <div class="h"><div class="av"></div><div><b>isadoraekenberg</b><span>Isadóra Ekenberg · Creative director</span></div></div>
-      Swedish designer in Tokyo<br>
-      Nordic glamour, Tokyo rituals<br>
-      Founder, ISADÓRA JEWELS<br>
-      Svenska / English<br>
-      <span class="link">Work: [email] · shop link</span>
-    </div>
-    <div class="reveal">
-      <p class="lede" style="margin-top:0">Line one says who. Line two says why follow. Line three is the product. Line four is the language promise. The last line is how brands reach her.</p>
-      <p class="note" style="margin-top:18px">Highlights: Tokyo · Studio · Worn · Press. A dedicated work email, like Felicia's, signals she is bookable.</p>
-    </div>
-  </div>
-</section>
-
-<!-- 15 MEASURE / AVOID -->
-<section class="stone">
-  <div class="head">
-    <div class="num">15</div>
-    <div>
-      <div class="eyebrow">Signals and guardrails</div>
-      <h2 class="sec" style="margin-top:14px">Watch four numbers. <em>Avoid four traps.</em></h2>
-    </div>
-  </div>
-  <div class="two">
-    <div class="reveal">
-      <h3>Watch</h3>
-      <ul class="list">
-        <li><b>Saves and shares per post.</b> They predict reach better than likes.</li>
-        <li><b>Profile visits to follows.</b> Tells her whether the bio and grid convert.</li>
-        <li><b>Reel watch time.</b> Does the first two seconds hold?</li>
-        <li><b>Enquiries a month.</b> Brand emails, press, and shop visits. The number that pays.</li>
-      </ul>
-    </div>
-    <div class="reveal">
-      <h3>Avoid</h3>
-      <ul class="list">
-        <li><b>Bought followers or engagement pods.</b> Brands check, and the algorithm punishes it.</li>
-        <li><b>Every trend.</b> Only trends she can do in her own style.</li>
-        <li><b>Unlabelled ads.</b> Japan has banned stealth marketing since 1 October 2023. Sweden requires a clear "reklam" label. Mark every paid post.</li>
-        <li><b>Live location.</b> Post a place after leaving it. Keep home and family off the grid.</li>
-      </ul>
-    </div>
+  <div class="measure">
+    <div class="reveal"><b>3 of 4 weeks</b><span>A real clip went up. Low weeks are allowed.</span></div>
+    <div class="reveal"><b>Invitations</b><span>How many arrived, and how many you actually wanted.</span></div>
+    <div class="reveal"><b>Enquiries</b><span>Client and modelling emails reaching the work address.</span></div>
+    <div class="reveal"><b>The bank</b><span>Stays at three to four weeks of finished clips.</span></div>
+    <div class="reveal"><b>How it felt</b><span>Which pieces gave you energy, and which took it. Do more of the first.</span></div>
   </div>
 </section>
 
 <!-- CLOSE -->
 <section class="close night">
   <div class="kicker reveal">Close</div>
-  <h1 class="reveal" style="margin-top:18px">Not the next Louise. <em>The first Isadora.</em></h1>
-  <p class="lede reveal">Same engine: one subject, repeated formats, long relationships, a product of her own. Different fuel: ten years of Tokyo, Swedish glamour, and a studio.</p>
+  <h1 class="reveal" style="margin-top:18px">Not louder. <em>More visible.</em></h1>
+  <p class="lede reveal">Your real life, filmed beautifully by someone else, one clip a week. The rooms you want will open from there, at a pace your body agrees with.</p>
   <div class="sources">
-    Sources, checked 26 September 2026: Louise Jorge on
-    <a href="https://www.linkedin.com/in/louise-jorge-71193b190">LinkedIn</a> (roles, NA-KD since 2017, networks) and
-    <a href="https://my.youtubers.me/louise-jorge/youtuber-stats/en">youtubers.me</a> (84,000 subscribers, 540 videos). Felicia Aveklew on
-    <a href="https://sv.wikipedia.org/wiki/Felicia_Aveklew">Swedish Wikipedia</a> (career, Kylie Jenner repost) and her
-    <a href="https://www.instagram.com/feliciaaveklew/">Instagram bio</a> (250K, Lowd Cosmetics, Uppkopplad podcast). Isadora on
-    <a href="https://adoralexa.wixsite.com/isadora">her site</a> and LinkedIn. Her follower figure comes from the Sense Tokyo company plan, March 2026; one public tracker shows a lower 24.1K, so confirm in the app.
-    Stealth marketing: Consumer Affairs Agency, Premiums and Representations Act, from 1 October 2023. Rate rule of thumb and yen figures are estimates, not quotes. Photographs on this page are AI-generated mood images, not Isadora.
+    Built from Isadora and Keigo's conversation on 26 September 2026, Sophia's advice, and the Sense Tokyo client plan. Louise Jorge and Felicia Aveklew are references for format only (public profiles checked 26 September 2026). Yen figures are rough estimates, not quotes. Which Tokyo PR teams invite English-speaking creators has not been verified. Photographs on this page are AI-generated mood images, not Isadora.
     <br><br>Prepared by Sense Tokyo for Isadora and Keigo. Private link — please do not share.
   </div>
 </section>
@@ -735,8 +611,7 @@ section{padding:clamp(80px,12vw,160px) var(--pad);position:relative}
   var bar = document.getElementById("progress");
   function onScroll() {
     var h = document.documentElement;
-    var p = h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight);
-    bar.style.width = (p * 100) + "%";
+    bar.style.width = (h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight) * 100) + "%";
   }
   document.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
